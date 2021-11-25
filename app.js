@@ -81,7 +81,7 @@ function creategridart(){
         for (let a = 0; a <= 0; a++){
         var thecolor = document.getElementById("color").value;
         arr[0].style.backgroundColor = thecolor;
-        arr[0].classList.toggle("appearButtons");
+        arr[0].classList.add("appearButtons");
         var lasttext = document.getElementById("LastColorUsedText");
         lasttext.classList.add("visible");
         arr.push(arr.shift(arr[0]));
