@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async src="./app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pixel Art</title>
+</head>
+<body onclick="getid(this.id)">
+    <div id="maintitle">
+    <h1>Edoardo's Pixart!</h1>
+    </div>
+    <div id="box">
+        <div id="div1">
+            <div class="divtitle">
+                <h2 class="divtitlenumber">1-</h2>
+                <h2 class="divtext">Choose the Grid Size</h2>
+            </div> <!-- Chiusura divtitle -->
+            <div class="divinputs">
+                <div id="divinput1">
+                    <label for="">Height</label>
+                    <input type="number" required min="1" max="50" value="10" step="1" name="" id="height">
+                </div>
+                <div id="divinput2">
+                    <label for="">Width</label>
+                    <input type="number" required min="1" max="50" value="10" step="1" name="" id="width">
+                </div>
+                <div class="buttons"">
+                    <button id="create" onclick="creategridart()">Create the Grid</button>
+                </div>
+                <div>
+                    <button id="clearColor">Clear all Color</button>
+                </div>
+                <div>
+                    <button id="fillColor">Fill the Colors</button>
+                </div>
+                <div>
+                    <button id="toggleGrid">Toggle Grid </button>
+                </div>
+            </div> <!-- Chiusura divinputs -->
+        </div> <!-- Chiusura div1 -->
+
+
+        <div id="div3">
+            <p>2 - Pick a color from the palette</p>
+            <input type="color" id="color" name="color" value="#ffffff" onchange="colorz()"><br><br>
+        </div>
+
+        <div id="tablediv">
+            <p></p>
+        </div>
+
+        <div id="colorused">
+            <p id="LastColorUsedText" class="hidden">Last Colors Used</p>
+
+            <table id="tablewhat">
+                <div>
+                    <div  id="td1" onclick=takecolor(this.id)></div>
+                    <div  id="td2" onclick=takecolor(this.id)></div>
+                    <div  id="td3" onclick=takecolor(this.id)></div>
+                    <div  id="td4" onclick=takecolor(this.id)></div>
+                    <div  id="td5" onclick=takecolor(this.id)></div>
+                    <div  id="td6" onclick=takecolor(this.id)></div>
+                    <div  id="td7" onclick=takecolor(this.id)></div>
+                    <div  id="td8" onclick=takecolor(this.id)></div>
+                    <div  id="td9" onclick=takecolor(this.id)></div>
+                    <div  id="td10" onclick=takecolor(this.id)></div>
+                </div>
+            </table>
+        </div>
+    </div><!-- Chiusura box -->
+</body>
+</html>
