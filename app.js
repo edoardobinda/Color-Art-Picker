@@ -143,10 +143,13 @@ function getid(e){
 window.oncontextmenu = function (e) {
     e = e || window.event;
     e = e.target || e.srcElement;
-    if (e.style.backgroundColor =! null){
+    numberofe = parseInt(e.id);
+if ((Number.isInteger(numberofe))){
+        if (e.style.backgroundColor =! null){
         e.style.backgroundColor = "#ffffff";
-    }
-    return false;
+        }
+        return false;
+        }
 }
 
 
